@@ -1,3 +1,5 @@
+package studentinfo;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,7 +10,10 @@
  *
  * @author arturo.pina
  */
-public class StudentTest extends junit.framework.TestCase {
+import studentinfo.Student;
+import junit.framework.TestCase;
+
+public class StudentTest extends TestCase {
     public void testCreate() {
         final String firstStudentName = "Jane Doe";
         Student firstStudent = new Student(firstStudentName);

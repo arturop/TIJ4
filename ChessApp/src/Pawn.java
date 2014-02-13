@@ -11,6 +11,9 @@
 public class Pawn {
     private String colour;
     
+    Pawn() {
+        this.colour = "white";
+    }
     Pawn(String colour) {
         this.colour = colour;
     }
