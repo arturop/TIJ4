@@ -10,21 +10,18 @@
  */
 public class PawnTest extends junit.framework.TestCase {
     public void testCreate() {
-        final String whiteColour = "white";
-        Pawn firstPawn = new Pawn(whiteColour);
+        Pawn firstPawn = new Pawn(Pawn.WHITE);
         String firstPawnColour = firstPawn.getColour();
-        assertEquals(firstPawnColour, whiteColour);
+        assertEquals(firstPawnColour, Pawn.WHITE);
         
-        final String blackColour = "black";
-        Pawn secondPawn = new Pawn(blackColour);
+        Pawn secondPawn = new Pawn(Pawn.BLACK);
         String secondPawnColour = secondPawn.getColour();
-        assertEquals(secondPawnColour, blackColour);
+        assertEquals(secondPawnColour, Pawn.BLACK);
     }
     
     public void testDefaultPawn() {
-        final String whiteColour = "white";
         Pawn pawn = new Pawn();
         String pawnColour = pawn.getColour();
-        assertEquals(pawnColour, whiteColour);
+        assertEquals(pawnColour, Pawn.WHITE);
     }
 }

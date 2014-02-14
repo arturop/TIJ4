@@ -10,9 +10,11 @@
  */
 public class Pawn {
     private String colour;
+    final static String WHITE = "white";
+    final static String BLACK = "black";
     
     Pawn() {
-        this.colour = "white";
+        this.colour = WHITE;
     }
     Pawn(String colour) {
         this.colour = colour;
