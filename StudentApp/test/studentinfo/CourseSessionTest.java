@@ -55,4 +55,5 @@ public class CourseSessionTest extends TestCase {
         Date sixteenWeeksOut = createDate(2003, 4, 25);
         assertEquals(sixteenWeeksOut, session.getEndDate());
     }
+    
 }

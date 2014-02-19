@@ -53,6 +53,10 @@ public class CourseSession {
         return startDate;
     }
     
+    ArrayList<Student> getAllStudents() {
+        return students;
+    }
+    
     Date getEndDate() {
         GregorianCalendar calendar = new GregorianCalendar();
         calendar.setTime(startDate);
@@ -63,4 +67,5 @@ public class CourseSession {
         calendar.add(Calendar.DAY_OF_YEAR, numberOfDays);
         return calendar.getTime();
     }
+    
 }
