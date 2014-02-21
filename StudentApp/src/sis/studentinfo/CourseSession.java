@@ -1,4 +1,4 @@
-package studentinfo;
+package sis.studentinfo;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,7 +23,7 @@ public class CourseSession {
         this.startDate = startDate;
     }
     
-    CourseSession(String department, String number, Date startDate) {
+    public CourseSession(String department, String number, Date startDate) {
         this.department = department;
         this.number = number;
         this.startDate = startDate;
@@ -41,7 +41,7 @@ public class CourseSession {
         return students.size();
     }
     
-    void enroll(Student student) {
+   public void enroll(Student student) {
         students.add(student);
     }
     
@@ -53,7 +53,7 @@ public class CourseSession {
         return startDate;
     }
     
-    ArrayList<Student> getAllStudents() {
+    public ArrayList<Student> getAllStudents() {
         return students;
     }
     
